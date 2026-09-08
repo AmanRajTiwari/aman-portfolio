@@ -103,7 +103,7 @@ export function About() {
         {/* ── Large headline ────────────────────────────── */}
         <Reveal delay={0.1}>
           <h2 className="about-headline">
-            I build digital products<br />
+            I build digital products <br />
             <em className="about-headline-em">that solve real problems.</em>
           </h2>
         </Reveal>

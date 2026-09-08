@@ -141,7 +141,7 @@ export function Hero() {
           animate="visible"
           className="hero-cta-row"
         >
-          <a href="#projects" className="hero-btn-primary">
+          <a href="#work" className="hero-btn-primary">
             <span>View My Work</span>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
               <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

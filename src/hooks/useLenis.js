@@ -12,6 +12,11 @@ import { lenisConfig } from '../utils/designSystem'
  */
 export function useLenis() {
   useEffect(() => {
+    // Respect user's reduced-motion preference for accessibility
+    if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return
+    }
+
     let lenis
     let rafId
 

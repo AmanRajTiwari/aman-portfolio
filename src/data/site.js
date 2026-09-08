@@ -12,12 +12,12 @@ export const owner = {
   tagline: 'Building scalable products at the intersection of MERN, SaaS & AI.',
   focus: ['MERN Stack', 'SaaS Development', 'AI-assisted / Vibe Coding', 'Cloud & IoT'],
   location: 'India',
-  email: 'amanrajtiwari@example.com',  // update with real email
+  email: 'amanrajtiwari@gmail.com',
   availability: 'Open to opportunities',
 }
 
 export const links = {
-  github: 'https://github.com/amanrajtiwari',
+  github: 'https://github.com/AmanRajTiwari',
   linkedin: 'https://www.linkedin.com/in/amanrajtiwari01/',
   twitter: 'https://twitter.com/amanrajtiwari',
   resume: '/resume.pdf',
