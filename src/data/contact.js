@@ -8,7 +8,7 @@
 export const contact = {
   email: 'amanrajtiwari@gmail.com',
   github: 'https://github.com/AmanRajTiwari',
-  linkedin: 'https://linkedin.com/in/amanrajtiwari',
+  linkedin: 'https://www.linkedin.com/in/amanrajtiwari01/',
   status: 'OPEN TO OPPORTUNITIES',
   eyebrow: '04 — CONTACT',
   headline: 'Have a project in mind?',

@@ -18,7 +18,7 @@ export const owner = {
 
 export const links = {
   github: 'https://github.com/amanrajtiwari',
-  linkedin: 'https://linkedin.com/in/amanrajtiwari',
+  linkedin: 'https://www.linkedin.com/in/amanrajtiwari01/',
   twitter: 'https://twitter.com/amanrajtiwari',
   resume: '/resume.pdf',
 }

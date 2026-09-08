@@ -84,7 +84,7 @@ export function Contact() {
     },
     contact.linkedin && {
       name: 'LinkedIn',
-      value: 'in/amanrajtiwari',
+      value: 'in/amanrajtiwari01',
       href: contact.linkedin,
       icon: <LinkedinIcon size={17} />,
       external: true,
