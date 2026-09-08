@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 import { useLenis } from './hooks'
 import { Navbar } from './layouts'
-import { Hero, About, Work, Skills, Contact } from './sections'
+import { Hero, About, Work, Skills, Contact, Footer } from './sections'
 import { AmbientBackground, CursorGlow } from './components/ui'
 import { LoadingScreen } from './components/LoadingScreen'
 
@@ -50,6 +50,9 @@ function App() {
           <Skills />
           <Contact />
         </main>
+
+        {/* Site footer */}
+        <Footer />
       </motion.div>
     </>
   )
