@@ -1,0 +1,4 @@
+export { owner, links, nav } from './site'
+export { capabilities, statement } from './about'
+export { projects } from './projects'
+export { categories, mernStack } from './skills'
