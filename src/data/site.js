@@ -17,6 +17,7 @@ export const owner = {
 }
 
 export const links = {
+  site: 'https://amanrajtiwari.in',
   github: 'https://github.com/AmanRajTiwari',
   linkedin: 'https://www.linkedin.com/in/amanrajtiwari01/',
   twitter: 'https://twitter.com/amanrajtiwari',
