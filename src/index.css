@@ -2487,3 +2487,346 @@ html.lenis                            { height: auto; }
   .sk-mern-arrow { font-size: 0.65rem; }
 }
 
+
+/* =============================================================
+   04 — CONTACT SECTION
+   ============================================================= */
+
+.ct-section {
+  position: relative;
+  scroll-margin-top: 68px;
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+  overflow: hidden;
+}
+
+/* Subtle purple ambient glow behind headline & CTA */
+.ct-ambient {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(900px, 95vw);
+  height: 600px;
+  background: radial-gradient(
+    circle at center,
+    rgba(99, 102, 241, 0.12) 0%,
+    rgba(139, 92, 246, 0.05) 38%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ct-container {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ── Meta: Eyebrow + Availability Badge ── */
+.ct-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.75rem;
+}
+
+.ct-eyebrow-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ct-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+}
+
+.ct-eyebrow-rule {
+  width: 32px;
+  height: 1px;
+  background: rgba(99, 102, 241, 0.4);
+}
+
+/* Status indicator badge */
+.ct-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.32rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(16, 185, 129, 0.07);
+  border: 1px solid rgba(16, 185, 129, 0.24);
+}
+
+.ct-status-dot-wrap {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ct-status-dot-ping {
+  position: absolute;
+  inset: -1px;
+  border-radius: 50%;
+  background: #10b981;
+  opacity: 0.75;
+  animation: ct-ping 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.ct-status-dot {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+@keyframes ct-ping {
+  75%, 100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.ct-status-text {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #34d399;
+}
+
+/* ── Headline Group ── */
+.ct-headline-group {
+  margin-bottom: 1.75rem;
+  max-width: 840px;
+}
+
+.ct-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.ct-subheadline {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3.2vw, 2.4rem);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #f8fafc 30%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Conversational Copy ── */
+.ct-copy {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.35vw, 1.15rem);
+  color: var(--text-secondary);
+  max-width: 580px;
+  line-height: 1.75;
+  margin-bottom: 3.5rem;
+}
+
+/* ── Primary CTA Button ── */
+.ct-cta-wrap {
+  position: relative;
+  margin-bottom: 4.5rem;
+}
+
+.ct-cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 1.15rem 2.85rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.22) 0%, rgba(139, 92, 246, 0.18) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.45);
+  border-radius: 9999px;
+  text-decoration: none;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.3s ease,
+              background 0.3s ease,
+              box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.ct-cta:hover {
+  transform: translateY(-3px);
+  border-color: rgba(165, 180, 252, 0.85);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.38) 0%, rgba(139, 92, 246, 0.32) 100%);
+  box-shadow: 0 0 35px rgba(99, 102, 241, 0.35), 0 0 70px rgba(139, 92, 246, 0.18);
+}
+
+.ct-cta-arrow {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ct-cta:hover .ct-cta-arrow {
+  transform: translateX(5px);
+}
+
+/* ── Social & Professional Links ── */
+.ct-links-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.ct-link-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 1.35rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ct-link-item:hover {
+  background: rgba(99, 102, 241, 0.08);
+  border-color: rgba(99, 102, 241, 0.35);
+  color: #f8fafc;
+  transform: translateY(-2px);
+}
+
+.ct-link-icon {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-secondary);
+  transition: color 0.25s ease;
+}
+
+.ct-link-item:hover .ct-link-icon {
+  color: #a5b4fc;
+}
+
+.ct-link-name {
+  letter-spacing: 0.02em;
+}
+
+.ct-link-arrow {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.6;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.ct-link-item:hover .ct-link-arrow {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+/* =============================================================
+   Contact — Responsive Breakpoints
+   ============================================================= */
+
+/* Tablet 1024px */
+@media (max-width: 1024px) {
+  .ct-section {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+  .ct-headline { font-size: clamp(2.2rem, 5vw, 3.8rem); }
+  .ct-subheadline { font-size: clamp(1.3rem, 3vw, 2.1rem); }
+}
+
+/* Tablet 768px */
+@media (max-width: 768px) {
+  .ct-section {
+    padding-top: 6.5rem;
+    padding-bottom: 8.5rem;
+  }
+  .ct-container { padding: 0 1.5rem; }
+  .ct-meta { gap: 1rem; margin-bottom: 2rem; }
+  .ct-headline { font-size: clamp(2rem, 6vw, 3.2rem); }
+  .ct-subheadline { font-size: clamp(1.2rem, 3.5vw, 1.8rem); }
+  .ct-copy { margin-bottom: 2.75rem; }
+  .ct-cta-wrap { margin-bottom: 3.5rem; }
+  .ct-links-wrap { gap: 0.85rem; }
+}
+
+/* Mobile 500px & 390px */
+@media (max-width: 500px) {
+  .ct-section {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+  .ct-container { padding: 0 1.25rem; }
+  .ct-meta {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  .ct-headline { font-size: clamp(1.85rem, 8vw, 2.5rem); }
+  .ct-subheadline { font-size: clamp(1.15rem, 4.8vw, 1.5rem); }
+  .ct-copy {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 2.5rem;
+  }
+  .ct-cta {
+    width: 100%;
+    max-width: 320px;
+    padding: 1.05rem 2rem;
+    font-size: 1.05rem;
+  }
+  .ct-cta-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .ct-links-wrap {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    gap: 0.75rem;
+  }
+  .ct-link-item {
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem 1.25rem;
+  }
+}
